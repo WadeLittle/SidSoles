@@ -1,0 +1,53 @@
+/* Saahil */
+#saahil {
+    background-color: var(--main-div-color);
+    width: 85%;
+    margin: auto;
+    padding: 15px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
+
+#saahil h2 {
+    padding-left: 15px;
+}
+
+#saahil p {
+    padding-left: 15px;
+    width: 90%;
+}
+
+
+@media screen and (min-width: 600px) and (max-width: 1500px) {
+    .siding {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 680px) {
+    .images {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Smaller Resolutions */
+@media only screen and (max-width: 600px) {
+
+    .images {
+        display: block;
+        margin: auto;
+    }
+}
+
+
+
+@media only screen and (min-width: 600px) {
+    .siding {
+        display: flex;
+    }
+
+    #saahil p {
+        text-align: left;
+    }
+}

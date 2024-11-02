@@ -1,0 +1,52 @@
+
+.shop-section {
+    background-color: var(--main-div-color);
+    flex-wrap: wrap;
+    width: 30%;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+    text-align: center;
+    margin: 20px;
+    border-radius: 25px;
+}
+
+.title {
+    margin: 0;
+    padding: 10px;
+}
+
+.stock-photo {
+    display: block;
+    margin: auto;
+    width: 200px;
+    height: 200px
+}
+
+.atc-button {
+    padding: 14px 40px;
+    font-size: 24px;
+    background-color: #e7e7e7;
+    color: black;
+}
+
+@media (max-width: 900px) {
+    .shop-section {
+        width:100%;
+        /* 2 sections per row for screens smaller than 900px */
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1220px) {
+    .shop-section {
+        width: 45%;
+    }
+}
+
+/* Smaller Resolutions */
+@media only screen and (max-width: 600px) {
+    .shop-section {
+        width:100%;
+        margin-left: 0;
+        /* Full width for smaller screens */
+    }
+}

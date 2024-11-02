@@ -1,0 +1,62 @@
+:root {
+    --main-background-color: #B3B4BD;
+    --main-div-color: #748D92;
+    --bottom-header-color: #124E66;
+    --a-hover-color: #2E3944;
+}
+
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--main-background-color);
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    margin: 0;
+    padding: 0;
+}
+/* Header */
+#main-header {
+    background-color: var(--main-div-color);
+    display: flex;
+    position: relative;
+    padding: 0;
+}
+
+
+/* Top Header menu */
+#top-header {
+    margin: auto;
+}
+
+#top-header ul {
+    padding: 0;
+}
+
+#top-header li {
+    list-style-type: none;
+}
+
+#main-header h1 {
+    top: 0;
+    margin: auto;
+    text-align: center;
+
+}
+
+#admin h2 {
+    position: absolute;
+    right: 0%;
+    top: 1%;
+    font-size: medium;
+    padding: 0;
+    margin: 0;
+    padding-right: 5px;
+}
+#admin h2 a {
+    color: black;
+    text-decoration: none;
+}
+

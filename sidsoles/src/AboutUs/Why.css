@@ -1,0 +1,26 @@
+
+#left-side {
+    flex: 1
+}
+
+#group-image {
+    flex: 1;
+}
+
+#left-side img {
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+#why {
+    background-color: var(--main-div-color);
+    margin: auto;
+    width: 85%;
+    padding: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}

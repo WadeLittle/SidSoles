@@ -1,0 +1,62 @@
+/*Top-Pick Shoes */
+.picks-div {
+    background-color: var(--main-div-color);
+    padding-top: 5px;
+    color: white;
+}
+
+.picks-div h1 {
+    text-align: center;
+}
+
+.top-picks {
+    flex: 1;
+    background-color: var(--main-background-color);
+    margin: 20px;
+    padding: 10px;
+    color: black;
+}
+
+.top-picks h2 {
+    text-align: center;
+}
+
+.top-picks img {
+    max-width: 100%;
+    border-radius: 10%;
+}
+
+.picks {
+    background-color: var(--main-div-color);
+}
+
+
+
+/*Parralax */
+.parallax {
+    height: 100%;
+    opacity: 0.65;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    /* So we can center content inside */
+}
+/* Typography */
+.parallax-text {
+    text-align: center;
+    padding-top: 350px;
+    padding-bottom: 350px;
+    color: black;
+    font-size: .1px;
+}
+
+/* Turn off parallax scrolling for all tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
