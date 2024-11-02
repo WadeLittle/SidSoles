@@ -12,14 +12,14 @@
 }
 
 .shop-section {
-    background-color: var(--main-div-color);
+    /* background-color: var(--main-div-color);
     flex: 0 1 calc(33.3% -20px);
     padding: 50px;
     box-sizing: border-box;
     margin-bottom: 20px;
     text-align: center;
     margin: 20px;
-    border-radius: 25px;
+    border-radius: 25px; */
 }
 #size {
     width: auto;
