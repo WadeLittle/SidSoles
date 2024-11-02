@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/SidSoles/static/css/main.180a0a44.css",
+    "main.js": "/SidSoles/static/js/main.0cdef927.js",
+    "static/media/yeezy-parallax.jpeg": "/SidSoles/static/media/yeezy-parallax.236836d53c23cfa5a6d7.jpeg",
+    "static/media/third-parallax.jpg": "/SidSoles/static/media/third-parallax.1a43243d8c8f7336411a.jpg",
+    "static/media/sid-logo.jpg": "/SidSoles/static/media/sid-logo.ef74562f7db5b294dfdc.jpg",
+    "static/media/pexels-photo-8170944.jpg": "/SidSoles/static/media/pexels-photo-8170944.56ea89f223cef59aa1f1.jpg",
+    "static/media/saahil (2).jpg": "/SidSoles/static/media/saahil (2).cf859f1ac1c19ffabdd9.jpg",
+    "static/media/jordan-4-white-thunder.jpg": "/SidSoles/static/media/jordan-4-white-thunder.633ee98a68ec4f01e52d.jpg",
+    "static/media/Wade.jpg": "/SidSoles/static/media/Wade.9b03d4964b2953a23aca.jpg",
+    "index.html": "/SidSoles/index.html",
+    "main.180a0a44.css.map": "/SidSoles/static/css/main.180a0a44.css.map",
+    "main.0cdef927.js.map": "/SidSoles/static/js/main.0cdef927.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.180a0a44.css",
+    "static/js/main.0cdef927.js"
+  ]
+}
