@@ -7,7 +7,7 @@ const YeezyPicks = () => {
         <h1 class="parallax-text"> Yeezys</h1>
     </div>
     <div class="picks-div">
-        <h1>Top Yeezy Picks</h1>
+        <h1>Top Yeezyyyyy Picks</h1>
         <div id="yeezy-picks" class="picks columns">
           
         </div>
