@@ -10,7 +10,7 @@ const ContactUs = () => {
             <Layout />
             <div id="content">
                 <h1>Contact Us</h1>
-                <div class="columns">
+                <div className="columns">
                     <ContactForm />
                     <ContactInfo />
                 </div>

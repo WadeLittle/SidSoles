@@ -7,7 +7,7 @@ const Shop = () => {
     return (
         <>
             <Layout />
-            <div id="shop-items" class="columns">
+            <div id="shop-items" className="columns">
                 <Item />
                 <Item />
                 <Item />

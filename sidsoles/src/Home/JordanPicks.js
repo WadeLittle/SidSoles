@@ -3,12 +3,12 @@ import "./JordanPicks.css";
 const JordanPicks = () => {
     return (
         <>
-            <div class="parallax first">
-                <h1 class="parallax-text"> Welcome</h1>
+            <div className="parallax first">
+                <h1 className="parallax-text"> Welcome</h1>
             </div>
-            <div class="picks-div">
+            <div className="picks-div">
                 <h1>Top Jordan Picks</h1>
-                <div id="jordan-picks" class="picks columns">
+                <div id="jordan-picks" className="picks columns">
 
                 </div>
             </div>

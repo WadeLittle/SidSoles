@@ -6,30 +6,30 @@ const CartInfo = () => {
         <>
             <section id="cart-info">
                 <h2>Cart</h2>
-                <section class="cart-item columns">
-                    <section class="cart-image">
+                <section className="cart-item columns">
+                    <section className="cart-image">
                         <img src={jordan4WhiteThunder} />
                     </section>
-                    <section class="cart-data">
-                        <h3 class="item-name">Jordan 4</h3>
-                        <h3 class="cart-size">Size:</h3>
-                        <h3 class="cart-condition">Condition:
+                    <section className="cart-data">
+                        <h3 className="item-name">Jordan 4</h3>
+                        <h3 className="cart-size">Size:</h3>
+                        <h3 className="cart-condition">Condition:
                         </h3>
-                        <h3 class="cart-price">$170</h3>
-                        <button class="remove-button">X </button>
+                        <h3 className="cart-price">$170</h3>
+                        <button className="remove-button">X </button>
                     </section>
                 </section>
-                <section class="cart-item columns">
-                    <section class="cart-image">
+                <section className="cart-item columns">
+                    <section className="cart-image">
                         <img src={jordan4WhiteThunder} />
                     </section>
-                    <section class="cart-data">
-                        <h3 class="item-name">Jordan 4</h3>
-                        <h3 class="cart-size">Size:</h3>
-                        <h3 class="cart-condition">Condition:
+                    <section className="cart-data">
+                        <h3 className="item-name">Jordan 4</h3>
+                        <h3 className="cart-size">Size:</h3>
+                        <h3 className="cart-condition">Condition:
                         </h3>
-                        <h3 class="cart-price">$170</h3>
-                        <button class="remove-button">X </button>
+                        <h3 className="cart-price">$170</h3>
+                        <button className="remove-button">X </button>
                     </section>
                 </section>
 

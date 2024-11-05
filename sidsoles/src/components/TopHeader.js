@@ -5,7 +5,7 @@ const TopHeader = () => {
     return (
         <header id="main-header">
             <nav id="top-header">
-                <ul class="columns">
+                <ul className="columns">
                     <li><h1>SidSoles</h1></li>
                     <li id="admin"><h2><Link to="/Admin">Admin</Link></h2></li>
                 </ul>

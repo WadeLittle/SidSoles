@@ -4,9 +4,9 @@ import "../AboutUs/Wade.css";
 
 const Wade = () => {
     return (
-        <div id="wade" class="siding">
+        <div id="wade" className="siding">
             <section>
-                <img class="images" src={Wadepic} />
+                <img className="images" src={Wadepic} />
             </section>
             <section>
                 <h2>Wade Little</h2>

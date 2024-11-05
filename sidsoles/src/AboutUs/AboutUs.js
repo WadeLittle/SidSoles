@@ -13,7 +13,7 @@ const AboutUs = () => {
             <Layout />
             <div id="content">
                 <h1>About Us</h1>
-                <div class="columns">
+                <div className="columns">
                     <Why />
                     <div id="right-section">
                         <Saahil />

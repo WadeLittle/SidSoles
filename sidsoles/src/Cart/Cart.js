@@ -7,7 +7,7 @@ const Cart = () => {
     return (
         <>
             <Layout />
-            <div class="columns">
+            <div className="columns">
                 <CheckoutInfo />
                 <CartInfo />
             </div>

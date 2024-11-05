@@ -8,7 +8,7 @@ const Admin = () => {
     return (
         <>
             <Layout />
-            <div id="filler-and-login" class="columns">
+            <div id="filler-and-login" className="columns">
                 <Filler />
                 <Login />
             </div>

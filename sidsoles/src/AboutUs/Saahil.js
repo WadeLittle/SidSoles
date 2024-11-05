@@ -3,9 +3,9 @@ import "../AboutUs/Saahil.css";
 
 const Saahil = () => {
     return (
-        <div id="saahil" class="siding">
+        <div id="saahil" className="siding">
             <section>
-                <img class="images" src={SaahilPic} />
+                <img className="images" src={SaahilPic} />
             </section>
             <section>
                 <h2>Saahil Yerkola</h2>
