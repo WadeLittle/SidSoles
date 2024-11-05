@@ -4,19 +4,19 @@ import Footer from "../components/Footer";
 import "./Shop.css";
 
 const Shop = () => {
-    return(
-    <>
-    <Layout/>
-    <div id="shop-items" class="columns">
-    <Item/>
-    <Item/>
-    <Item/>
-    <Item/>
-    <Item/>
-    <Item/>
-    </div>
-    <Footer/>
-    </>
+    return (
+        <>
+            <Layout />
+            <div id="shop-items" class="columns">
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+                <Item />
+            </div>
+            <Footer />
+        </>
     )
 }
 

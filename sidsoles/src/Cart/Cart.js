@@ -4,14 +4,14 @@ import CheckoutInfo from "./CheckoutInfo";
 import Footer from "../components/Footer";
 import "../Cart/Cart.css";
 const Cart = () => {
-    return(
+    return (
         <>
-        <Layout/>
-        <div class="columns">
-        <CheckoutInfo/>
-        <CartInfo/>
-        </div>
-        <Footer/>
+            <Layout />
+            <div class="columns">
+                <CheckoutInfo />
+                <CartInfo />
+            </div>
+            <Footer />
         </>
     )
 }

@@ -7,13 +7,13 @@ import "./Admin.css";
 const Admin = () => {
     return (
         <>
-        <Layout/>
-        <div id="filler-and-login" class="columns">
-        <Filler/>
-        <Login/>
-        </div>
-        <Create/>
-        <Footer/>
+            <Layout />
+            <div id="filler-and-login" class="columns">
+                <Filler />
+                <Login />
+            </div>
+            <Create />
+            <Footer />
         </>
     )
 }

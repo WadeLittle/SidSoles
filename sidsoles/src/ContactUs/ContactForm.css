@@ -3,7 +3,8 @@
 /* Style inputs with type="text", select elements and textareas */
 input[type=text],
 select,
-textarea,input[type=email] {
+textarea,
+input[type=email] {
     width: 100%;
     /* Full width */
     padding: 12px;
@@ -21,6 +22,7 @@ textarea,input[type=email] {
     resize: vertical
         /* Allow the user to vertically resize the textarea (not horizontally) */
 }
+
 #message {
     height: 330px;
 }

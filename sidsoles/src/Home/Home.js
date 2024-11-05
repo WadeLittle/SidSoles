@@ -5,15 +5,15 @@ import JordanPicks from "./JordanPicks";
 import YeezyPicks from "./YeezyPicks";
 import Footer from "../components/Footer";
 const Home = () => {
-    return (
-      <>
-      <Layout/>  
-      <JordanPicks/>
-      <YeezyPicks/>
-      <DunksPicks/>
-      <Footer/>
-      </>
-    );
+  return (
+    <>
+      <Layout />
+      <JordanPicks />
+      <YeezyPicks />
+      <DunksPicks />
+      <Footer />
+    </>
+  );
 }
 
 

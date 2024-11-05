@@ -7,15 +7,15 @@ import "../ContactUs/ContactUs.css"
 const ContactUs = () => {
     return (
         <>
-        <Layout/>
-        <div id="content">
-        <h1>Contact Us</h1>
-        <div class="columns">
-        <ContactForm/>
-        <ContactInfo/>
-        </div>
-        </div>
-        <Footer/>
+            <Layout />
+            <div id="content">
+                <h1>Contact Us</h1>
+                <div class="columns">
+                    <ContactForm />
+                    <ContactInfo />
+                </div>
+            </div>
+            <Footer />
         </>
     )
 }

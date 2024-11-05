@@ -1,4 +1,3 @@
-
 .shop-section {
     background-color: var(--main-div-color);
     flex-wrap: wrap;
@@ -31,7 +30,7 @@
 
 @media (max-width: 900px) {
     .shop-section {
-        width:100%;
+        width: 100%;
         /* 2 sections per row for screens smaller than 900px */
     }
 }
@@ -45,7 +44,7 @@
 /* Smaller Resolutions */
 @media only screen and (max-width: 600px) {
     .shop-section {
-        width:100%;
+        width: 100%;
         margin-left: 0;
         /* Full width for smaller screens */
     }
