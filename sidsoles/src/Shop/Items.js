@@ -1,40 +1,28 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Item from "./Item";
-import ItemPreview from "../Home/ItemPreview";
+import Create from "../Admin/Create";
 
-const Items = ({ brand, limit, previewOnly }) => {
+const Items = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
         (async () => {
-            const response = await axios.get("https://sidsoles-backend.onrender.com/api/shoes");
-            let filteredItems = response.data;
-            
-            // Apply filtering by brand and limit if provided
-            if (brand) {
-                filteredItems = filteredItems.filter(item => item.brand === brand);
-            }
-            if (limit) {
-                filteredItems = filteredItems.slice(0, limit);
-            }
-            setItems(filteredItems);
+            const response = await axios.get("http://localhost:3001/api/shoes");
+            setItems(response.data);
         })();
-    }, [brand, limit]);
+    }, []);
+
+    const updateItems = (item) => {
+        setItems((items) => [...items, item]);
+    }
 
     return (
         <>
+       <Create showNewShoe={updateItems}/>
             {items.map(item => (
-                previewOnly ? (
-                    <ItemPreview
-                        key={item.id}
-                        title={item.title}
-                        image={item.image}
-                    />
-                ) : (
                     <Item
                         key={item.id}
-                        id={item.id}
                         brand={item.brand}
                         title={item.title}
                         image={item.image}
@@ -43,9 +31,10 @@ const Items = ({ brand, limit, previewOnly }) => {
                         price={item.price}
                         condition={item.condition}
                         carted={item.carted}
+
                     />
                 )
-            ))}
+            )}
         </>
     );
 };

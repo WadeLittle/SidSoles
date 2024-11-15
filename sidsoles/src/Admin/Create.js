@@ -1,7 +1,7 @@
 import "./Create.css";
 import React, { useState } from "react";
 
-const Create = () => {
+const Create = (props) => {
     const [inputs, setInputs] = useState({});
     const [result, setResult] = useState("");
     const [selectedSizes, setSelectedSizes] = useState([]);
@@ -24,6 +24,8 @@ const Create = () => {
             });
             if (response.status === 200) {
                 setResult("Shoe successfully added!");
+                props.showNewShoe(await response.json());
+                event.target.reset();
             } else {
                 setResult("Failed to add shoe.");
             }
