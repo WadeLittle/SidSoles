@@ -17,7 +17,7 @@ const Create = (props) => {
 
         console.log(...formData);
 
-        try {
+
             const response = await fetch("http://localhost:3001/api/shoes", {
                 method: "POST",
                 body: formData,
@@ -26,14 +26,12 @@ const Create = (props) => {
                 setResult("Shoe successfully added!");
                 props.showNewShoe(await response.json());
                 event.target.reset();
+                setSelectedSizes([]);
             } else {
                 setResult("Failed to add shoe.");
-            }
-        } catch (error) {
-            setResult("An error occurred.");
-            console.error("Error:", error);
         }
     };
+
 
     const handleCheckboxChange = (event) => {
         const { value, checked } = event.target;
