@@ -9,7 +9,7 @@ const Item = (props) => {
       <h1 className="title">{item.title}</h1>
       <img
         className="stock-photo"
-        src ={`${process.env.PUBLIC_URL}/images/${item.image}`}
+        src ={`https://sidsoles-backend.onrender.com/images/${item.image}`}
         alt={item.title}
       />
       <h3 className="sku">Sku: {item.sku}</h3>
