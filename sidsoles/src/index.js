@@ -9,14 +9,14 @@ import Shop from './Shop/Shop';
 import Cart from './Cart/Cart';
 import Admin from './Admin/Admin';
 import AboutUs from './AboutUs/AboutUs';
-import { ItemsProvider } from './ItemsContext';
+
 import Items from './Shop/Items';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
 const App = () => {
   return (
-    <ItemsProvider>
+
     <BrowserRouter >
       <Routes>
         <Route path="/" element={(<Home />)} />
@@ -28,7 +28,6 @@ const App = () => {
         </Route>
       </Routes>
     </BrowserRouter>
-    </ItemsProvider>
   )
 }
 root.render(
