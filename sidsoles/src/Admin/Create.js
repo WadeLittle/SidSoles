@@ -18,7 +18,7 @@ const Create = (props) => {
         console.log(...formData);
 
 
-            const response = await fetch("http://localhost:3001/api/shoes", {
+            const response = await fetch("https://sidsoles-backend.onrender.com/api/shoes", {
                 method: "POST",
                 body: formData,
             });

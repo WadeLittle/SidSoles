@@ -8,7 +8,7 @@ const Items = () => {
 
     useEffect(() => {
         (async () => {
-            const response = await axios.get("http://localhost:3001/api/shoes");
+            const response = await axios.get("https://sidsoles-backend.onrender.com/api/shoes");
             setItems(response.data);
         })();
     }, []);
