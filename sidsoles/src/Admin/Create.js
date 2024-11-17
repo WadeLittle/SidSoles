@@ -1,10 +1,12 @@
 import "./Create.css";
 import React, { useState } from "react";
+import { ItemsContext } from "../ItemsContext";
 
 const Create = (props) => {
     const [inputs, setInputs] = useState({});
     const [result, setResult] = useState("");
     const [selectedSizes, setSelectedSizes] = useState([]);
+    const { addItem } = useContext(ItemsContext);
 
     const addToServer = async (event) => {
         event.preventDefault();
@@ -23,8 +25,9 @@ const Create = (props) => {
                 body: formData,
             });
             if (response.status === 200) {
+                const newItem = await response.json();
                 setResult("Shoe successfully added!");
-                props.showNewShoe(await response.json());
+                addItem(newItem);
                 event.target.reset();
                 setSelectedSizes([]);
             } else {
