@@ -19,7 +19,6 @@ const Items = () => {
 
     return (
         <>
-         <Create showNewShoe={updateItems}/>
             {items.map(item => (
                     <Item
                         key={item.id}

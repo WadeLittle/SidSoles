@@ -4,7 +4,15 @@ import Login from "./Login";
 import Filler from "./Filler";
 import Footer from "../components/Footer";
 import "./Admin.css";
+import { useState } from "react";
+
 const Admin = () => {
+    const [items, setItems] = useState([]);
+
+    const updateItems = (item) => {
+        setItems((items) => [...items, item]);
+    }
+
     return (
         <>
             <Layout />
@@ -12,7 +20,7 @@ const Admin = () => {
                 <Filler />
                 <Login />
             </div>
-            <Create />
+            <Create showNewShoe={updateItems} />
             <Footer />
         </>
     )
