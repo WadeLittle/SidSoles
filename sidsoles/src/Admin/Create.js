@@ -5,7 +5,7 @@ const Create = (props) => {
     const { formData, setFormData, showNewShoe } = props;
     const [result, setResult] = useState("");
     const [selectedSizes, setSelectedSizes] = useState([]);
-
+    console.log(formData);
     useEffect(() => {
         setFormData((prevValues) => ({ ...prevValues, sizes: selectedSizes }));
     }, [selectedSizes, setFormData]);
@@ -20,7 +20,7 @@ const Create = (props) => {
 
         console.log(...formDataToSend);
 
-        const response = await fetch("https://sidsoles-backend.onrender.com/api/shoes", {
+        const response = await fetch("http://localhost:3001/api/shoes", {
             method: "POST",
             body: formDataToSend,
         });

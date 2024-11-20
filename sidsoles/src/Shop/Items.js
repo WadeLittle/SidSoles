@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import Item from "./Item";
-import Create from "../Admin/Create";
 
 const Items = () => {
     const [items, setItems] = useState([]);
 
     useEffect(() => {
         (async () => {
-            const response = await axios.get("https://sidsoles-backend.onrender.com/api/shoes");
+            const response = await axios.get("http://localhost:3001/api/shoes");
             setItems(response.data);
         })();
     }, []);
@@ -21,7 +20,8 @@ const Items = () => {
         <>
             {items.map(item => (
                     <Item
-                        key={item.id}
+                        key={item._id}
+                        _id={item._id}
                         brand={item.brand}
                         title={item.title}
                         image={item.image}
@@ -30,9 +30,10 @@ const Items = () => {
                         price={item.price}
                         condition={item.condition}
                         carted={item.carted}
-
                     />
+
                 )
+                
             )}
         </>
     );
