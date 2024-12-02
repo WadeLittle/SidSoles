@@ -42,9 +42,13 @@ const EditItem = (props) => {
     setResult("Sending...");
 
     const formDataToSend = new FormData(event.target);
+    console.log(...formDataToSend);
     formDataToSend.append("_id", inputs._id);
     formDataToSend.delete("sizes");
-    formDataToSend.append("sizes", JSON.stringify(event.target.sizes));
+    const sizes = Array.from(event.target.sizes).map(option => option.value); // or option.text if you need the displayed text
+
+    formDataToSend.append("sizes", JSON.stringify(sizes)); // Stringify the array of values
+
     console.log(...formDataToSend);
     console.log(inputs._id);
     const response = await fetch(`http://localhost:3001/api/shoes/${props._id}`, {
@@ -103,58 +107,58 @@ const EditItem = (props) => {
             <label htmlFor="sizes">Sizes:</label>
             <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
               <label>
-                <input type="checkbox" name="sizes" value="4.5Y" checked={inputs.sizes.includes("4.5Y")} onChange={handleCheckboxChange} /> 4.5Y
+                <input type="checkbox" name="sizes" value="4.5Y"  onChange={handleCheckboxChange} /> 4.5Y
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="5Y" checked={inputs.sizes.includes("5Y")} onChange={handleCheckboxChange} /> 5Y
+                <input type="checkbox" name="sizes" value="5Y"  onChange={handleCheckboxChange} /> 5Y
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="5.5Y" checked={inputs.sizes.includes("5.5Y")} onChange={handleCheckboxChange} /> 5.5Y
+                <input type="checkbox" name="sizes" value="5.5Y"  onChange={handleCheckboxChange} /> 5.5Y
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="6Y" checked={inputs.sizes.includes("6Y")} onChange={handleCheckboxChange} /> 6Y
+                <input type="checkbox" name="sizes" value="6Y"  onChange={handleCheckboxChange} /> 6Y
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="6.5Y" checked={inputs.sizes.includes("6.5Y")} onChange={handleCheckboxChange} /> 6.5Y
+                <input type="checkbox" name="sizes" value="6.5Y"  onChange={handleCheckboxChange} /> 6.5Y
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="7Y" checked={inputs.sizes.includes("7Y")} onChange={handleCheckboxChange} /> 7Y
+                <input type="checkbox" name="sizes" value="7Y" onChange={handleCheckboxChange} /> 7Y
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="7.5" checked={inputs.sizes.includes("7.5")} onChange={handleCheckboxChange} /> 7.5
+                <input type="checkbox" name="sizes" value="7.5"  onChange={handleCheckboxChange} /> 7.5
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="8" checked={inputs.sizes.includes("8")} onChange={handleCheckboxChange} /> 8
+                <input type="checkbox" name="sizes" value="8"  onChange={handleCheckboxChange} /> 8
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="8.5" checked={inputs.sizes.includes("8.5")} onChange={handleCheckboxChange} /> 8.5
+                <input type="checkbox" name="sizes" value="8.5"  onChange={handleCheckboxChange} /> 8.5
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="9" checked={inputs.sizes.includes("9")} onChange={handleCheckboxChange} /> 9
+                <input type="checkbox" name="sizes" value="9"  onChange={handleCheckboxChange} /> 9
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="9.5" checked={inputs.sizes.includes("9.5")} onChange={handleCheckboxChange} /> 9.5
+                <input type="checkbox" name="sizes" value="9.5"  onChange={handleCheckboxChange} /> 9.5
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="10" checked={inputs.sizes.includes("10")} onChange={handleCheckboxChange} /> 10
+                <input type="checkbox" name="sizes" value="10"  onChange={handleCheckboxChange} /> 10
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="10.5" checked={inputs.sizes.includes("10.5")} onChange={handleCheckboxChange} /> 10.5
+                <input type="checkbox" name="sizes" value="10.5"  onChange={handleCheckboxChange} /> 10.5
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="11" checked={inputs.sizes.includes("11")} onChange={handleCheckboxChange} /> 11
+                <input type="checkbox" name="sizes" value="11"  onChange={handleCheckboxChange} /> 11
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="11.5" checked={inputs.sizes.includes("11.5")} onChange={handleCheckboxChange} /> 11.5
+                <input type="checkbox" name="sizes" value="11.5"  onChange={handleCheckboxChange} /> 11.5
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="12" checked={inputs.sizes.includes("12")} onChange={handleCheckboxChange} /> 12
+                <input type="checkbox" name="sizes" value="12"  onChange={handleCheckboxChange} /> 12
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="12.5" checked={inputs.sizes.includes("12.5")} onChange={handleCheckboxChange} /> 12.5
+                <input type="checkbox" name="sizes" value="12.5"  onChange={handleCheckboxChange} /> 12.5
               </label>
               <label>
-                <input type="checkbox" name="sizes" value="13" checked={inputs.sizes.includes("13")} onChange={handleCheckboxChange} /> 13
+                <input type="checkbox" name="sizes" value="13"  onChange={handleCheckboxChange} /> 13
               </label>
             </div>
 
