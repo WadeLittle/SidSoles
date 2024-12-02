@@ -1,6 +1,7 @@
 import "./Item.css";
 import React, { useState } from "react";
 import EditItem from "./EditItem";
+import DeleteItem from "./DeleteItem";
 
 const Item = (props) => {
   const [showEditDialog, setShowEditDialog] = useState(false);
@@ -36,6 +37,16 @@ const Item = (props) => {
     <>
       {showItem ? (
         <div>
+           {showDeleteDialog ? (
+            <DeleteItem
+              closeDialog={closeDeleteDialog}
+              hideItem = {hideItem}
+              title={item.title}
+              _id={item._id}
+            />
+          ) : (
+            ""
+          )}
           {showEditDialog ? (
             <EditItem
               closeDialog={closeEditDialog}
@@ -58,6 +69,9 @@ const Item = (props) => {
               <a href="#" onClick={openEditDialog}>
                 &#9998;
               </a>
+              <a href="#" onClick={openDeleteDialog}>
+                    &#x2715;
+                    </a>
             </section>
             <img
               className="stock-photo"
