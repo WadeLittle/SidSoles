@@ -5,7 +5,7 @@ const DeleteItem = (props) => {
   const [result, setResult] = useState("");
 
   const deleteItem = async() => {
-   const response = await fetch(`http://localhost:3001/api/shoes/${props._id}`,{
+   const response = await fetch(`https://sidsoles-backend.onrender.com/api/shoes/${props._id}`,{
     method:"DELETE"
    });
 

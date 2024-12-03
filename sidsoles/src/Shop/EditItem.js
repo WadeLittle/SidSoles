@@ -51,7 +51,7 @@ const EditItem = (props) => {
 
     console.log(...formDataToSend);
     console.log(inputs._id);
-    const response = await fetch(`http://localhost:3001/api/shoes/${props._id}`, {
+    const response = await fetch(`https://sidsoles-backend.onrender.com/api/shoes/${props._id}`, {
       method: "PUT",
       body: formDataToSend,
     });

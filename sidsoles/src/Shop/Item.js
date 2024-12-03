@@ -75,7 +75,7 @@ const Item = (props) => {
             </section>
             <img
               className="stock-photo"
-              src={`http://localhost:3001/images/${item.image}`}
+              src={`https://sidsoles-backend.onrender.com/api/shoes/${item.image}`}
               alt={item.title}
             />
             <h3 className="sku">Sku: {item.sku}</h3>
