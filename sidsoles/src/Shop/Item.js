@@ -45,33 +45,17 @@ const Item = (props) => {
               _id={item._id}
             />
           )}
-          {showEditDialog && (
-            <EditItem
-              closeDialog={closeEditDialog}
-              updateItem={editItem}
-              _id={item._id}
-              title={item.title}
-              brand={item.brand}
-              sku={item.sku}
-              sizes={item.sizes}
-              price={item.price}
-              condition={item.condition}
-              image={item.image}
-            />
-          )}
+         
           <section >
             <h1 className="title">{item.title}</h1>
             <section id="change-buttons">
-              <a href="#" onClick={openEditDialog}>
-                &#9998;
-              </a>
               <a href="#" onClick={openDeleteDialog}>
                 &#10006;
               </a>
             </section>
             <img
               className="stock-photo"
-              src={`http://localhost:3001/images/${item.image}`}
+              src={`https://sidsoles-backend.onrender.com/images/${item.image}`}
               alt={item.title}
             />
             <h3 className="sku">Sku: {item.sku}</h3>
