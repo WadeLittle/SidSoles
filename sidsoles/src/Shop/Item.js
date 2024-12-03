@@ -36,18 +36,16 @@ const Item = (props) => {
   return (
     <>
       {showItem ? (
-        <div>
-           {showDeleteDialog ? (
+        <div className="shop-section">
+          {showDeleteDialog && (
             <DeleteItem
               closeDialog={closeDeleteDialog}
-              hideItem = {hideItem}
+              hideItem={hideItem}
               title={item.title}
               _id={item._id}
             />
-          ) : (
-            ""
           )}
-          {showEditDialog ? (
+          {showEditDialog && (
             <EditItem
               closeDialog={closeEditDialog}
               updateItem={editItem}
@@ -60,22 +58,20 @@ const Item = (props) => {
               condition={item.condition}
               image={item.image}
             />
-          ) : (
-            ""
           )}
-          <section className="shop-section">
+          <section >
             <h1 className="title">{item.title}</h1>
             <section id="change-buttons">
               <a href="#" onClick={openEditDialog}>
                 &#9998;
               </a>
               <a href="#" onClick={openDeleteDialog}>
-                    &#x2715;
-                    </a>
+                &#10006;
+              </a>
             </section>
             <img
               className="stock-photo"
-              src={`https://sidsoles-backend.onrender.com/api/shoes/${item.image}`}
+              src={`http://localhost:3001/images/${item.image}`}
               alt={item.title}
             />
             <h3 className="sku">Sku: {item.sku}</h3>
